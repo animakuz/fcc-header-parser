@@ -1,0 +1,26 @@
+{
+  "name": "fcc-header-parser",
+  "version": "1.0.0",
+  "description": "Simple microservice to get user information [freeCodeCamp]",
+  "main": "main.js",
+  "scripts": {
+    "info": "echo 'Simple microservice to get user information [freeCodeCamp]'",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/animakuz/fcc-header-parser.git"
+  },
+  "keywords": [
+    "ip",
+    "address",
+    "nodejs",
+    "freecodecamp"
+  ],
+  "author": "animakuz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/animakuz/fcc-header-parser/issues"
+  },
+  "homepage": "https://github.com/animakuz/fcc-header-parser#readme"
+}
