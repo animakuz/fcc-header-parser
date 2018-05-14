@@ -1,11 +1,13 @@
 var http = require('http');
 var port = 8080;
 var host = 'localhost';
+var userInfo = {};  
 
 var server = http.createServer(function(req, res) {
-  var userInfo = {};  
+  var ipaddress = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
+
   //get user information
-  userInfo.ipaddress = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
+  userInfo.ipaddress = ipaddress.split(',')[0];
 
   //get first entry before comman in accept-language header
   //this is supposed to be the language setting
